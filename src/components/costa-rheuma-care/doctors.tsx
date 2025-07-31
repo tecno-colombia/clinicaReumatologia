@@ -1,6 +1,13 @@
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Stethoscope } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const doctors = [
   {
@@ -18,6 +25,11 @@ const doctors = [
     image: "https://placehold.co/400x400.png",
     hint: "doctor portrait",
   },
+  {
+    name: "Dra. María Lopez",
+    image: "https://placehold.co/400x400.png",
+    hint: "doctor portrait",
+  }
 ];
 
 export function Doctors() {
@@ -37,28 +49,44 @@ export function Doctors() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl gap-8 py-12 sm:grid-cols-2 lg:grid-cols-3">
-          {doctors.map((doctor) => (
-            <Card key={doctor.name} className="overflow-hidden text-center transition-all hover:shadow-xl">
-              <CardHeader className="p-0">
-                <Image
-                  src={doctor.image}
-                  alt={`Foto de ${doctor.name}`}
-                  width={400}
-                  height={400}
-                  className="aspect-square w-full object-cover"
-                  data-ai-hint={doctor.hint}
-                />
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="font-headline text-2xl">{doctor.name}</CardTitle>
-                <div className="mt-2 flex items-center justify-center gap-2 text-muted-foreground">
-                    <Stethoscope className="h-4 w-4" />
-                    <span>Reumatólogo</span>
+        <div className="py-12">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto"
+        >
+          <CarouselContent>
+            {doctors.map((doctor) => (
+              <CarouselItem key={doctor.name} className="basis-full sm:basis-1/2 md:basis-1/3">
+                <div className="p-1">
+                  <Card className="pt-6 border-0 shadow-none">
+                    <CardContent className="flex flex-col items-center justify-center p-0 gap-4">
+                      <Image
+                        src={doctor.image}
+                        alt={`Foto de ${doctor.name}`}
+                        width={180}
+                        height={180}
+                        className="rounded-full aspect-square object-cover"
+                        data-ai-hint={doctor.hint}
+                      />
+                      <div className="text-center">
+                        <h3 className="font-headline text-2xl font-semibold">{doctor.name}</h3>
+                        <div className="mt-1 flex items-center justify-center gap-2 text-muted-foreground">
+                            <Stethoscope className="h-4 w-4" />
+                            <span>Reumatólogo</span>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
         </div>
       </div>
     </section>
