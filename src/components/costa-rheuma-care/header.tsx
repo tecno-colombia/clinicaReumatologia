@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navLinks = [
+  { href: "#about", label: "Reumatología" },
   { href: "#servicios", label: "Servicios" },
-  { href: "#ubicaciones", label: "Ubicaciones" },
+  { href: "#ubicaciones", label: "Sedes" },
+  { href: "#investigacion", label: "Investigación" },
   { href: "#medicos", label: "Médicos" },
   { href: "#contacto", label: "Contacto" },
 ];

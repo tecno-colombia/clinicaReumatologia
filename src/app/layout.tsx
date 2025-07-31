@@ -3,8 +3,9 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Clinica de la Costa',
-  description: 'Líderes en Reumatología del Caribe Colombiano',
+  title: 'Reumatología en Clínica de la Costa | Barranquilla, Colombia',
+  description: 'Clínica de la Costa, líder en Reumatología en el Caribe Colombiano. Ofrecemos un portafolio integral de servicios para el diagnóstico y tratamiento de enfermedades reumatológicas y autoinmunes.',
+  keywords: "reumatologia, clinica de la costa, reumatologo, barranquilla, caribe colombiano, artritis, lupus, osteoporosis, esclerosis, vasculitis, consulta reumatologia, terapias biologicas"
 };
 
 export default function RootLayout({
@@ -13,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

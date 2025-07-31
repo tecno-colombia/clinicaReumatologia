@@ -23,12 +23,12 @@ export function TargetAudience() {
               Población Objetivo
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Atendemos una amplia gama de enfermedades reumatológicas y musculoesqueléticas.
+              Atendemos una amplia gama de enfermedades reumatológicas y musculoesqueléticas, brindando un manejo especializado a pacientes con las siguientes condiciones:
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-4 pt-8">
+          <div className="flex flex-wrap justify-center gap-3 pt-8 max-w-4xl">
             {conditions.map((condition) => (
-              <Badge key={condition} variant="secondary" className="px-4 py-2 text-base">
+              <Badge key={condition} variant="secondary" className="px-3 py-1.5 text-sm font-normal rounded-md">
                 {condition}
               </Badge>
             ))}

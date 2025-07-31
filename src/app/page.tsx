@@ -8,6 +8,7 @@ import { TargetAudience } from "@/components/costa-rheuma-care/target-audience";
 import { Commitments } from "@/components/costa-rheuma-care/commitments";
 import { Footer } from "@/components/costa-rheuma-care/footer";
 import { Transversal } from "@/components/costa-rheuma-care/transversal";
+import { Research } from "@/components/costa-rheuma-care/research";
 
 export default function Home() {
   return (
@@ -15,10 +16,11 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <Services />
         <About />
-        <Transversal />
+        <Services />
         <Locations />
+        <Transversal />
+        <Research />
         <TargetAudience />
         <Doctors />
         <Commitments />
