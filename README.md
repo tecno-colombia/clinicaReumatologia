@@ -32,4 +32,3 @@ La página está estructurada en varias secciones especializadas, cada una dise�
     -   Optimización de imágenes con `next/image`.
 -   **Hosting:** Firebase App Hosting
 
-Este proyecto fue desarrollado en **Firebase Studio**, una plataforma de desarrollo asistido por IA.
