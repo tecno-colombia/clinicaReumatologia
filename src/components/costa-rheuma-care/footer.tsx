@@ -12,11 +12,11 @@ export function Footer() {
             </a>
             <p className="text-sm text-primary-foreground/80">Líderes en servicios de salud en el Caribe Colombiano.</p>
           </div>
-          <div className="space-y-2">
+          <address className="space-y-2 not-italic">
             <h4 className="font-semibold text-lg font-headline">Contacto Principal</h4>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
               <Phone className="h-4 w-4" />
-              <span>+57 3369999</span>
+              <a href="tel:+573369999" className="hover:underline">+57 3369999</a>
             </div>
              <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
                 <MapPin className="h-4 w-4" />
@@ -24,13 +24,13 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
               <Mail className="h-4 w-4" />
-              <span>contacto@clinicadelacosta.com</span>
+              <a href="mailto:contacto@clinicadelacosta.com" className="hover:underline">contacto@clinicadelacosta.com</a>
             </div>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
               <Globe className="h-4 w-4" />
-              <span>www.clinicadelacosta.com</span>
+              <a href="https://www.clinicadelacosta.com" target="_blank" rel="noopener noreferrer" className="hover:underline">www.clinicadelacosta.com</a>
             </div>
-          </div>
+          </address>
           <div className="space-y-2">
             <h4 className="font-semibold text-lg font-headline">Navegación</h4>
             <ul className="space-y-1">
