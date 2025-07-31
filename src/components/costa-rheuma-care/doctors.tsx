@@ -11,18 +11,18 @@ import {
 
 const doctors = [
   {
+    name: "Dr. Antonio Iglesias",
+    image: "https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2Fantonio_iglescias.png?alt=media&token=98f9e7e9-9e44-4462-be9a-96e585642661",
+    hint: "doctor portrait",
+  },
+  {
     name: "Dr. Jorge Pérez",
     image: "https://placehold.co/400x400.png",
     hint: "doctor portrait",
   },
   {
-    name: "Dr. Antonio Iglesias",
-    image: "https://placehold.co/400x400.png",
-    hint: "doctor portrait",
-  },
-  {
     name: "Dr. Jesús Godoy",
-    image: "https://placehold.co/400x400.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2FDr.godoy_-400x393%20(1).png?alt=media&token=f633ef6c-91f1-4ca6-bd2d-71c9d1593d1d",
     hint: "doctor portrait",
   },
   {
