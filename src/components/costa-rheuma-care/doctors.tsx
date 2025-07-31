@@ -12,24 +12,28 @@ import {
 const doctors = [
   {
     name: "Dr. Antonio Iglesias",
+    specialty: "Reumatólogo",
     image: "https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2Fantonio_iglescias.png?alt=media&token=98f9e7e9-9e44-4462-be9a-96e585642661",
     hint: "doctor portrait",
   },
   {
     name: "Dr. Jorge Pérez",
-    image: "https://placehold.co/400x400.png",
+    specialty: "Reumatólogo",
+    image: "https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2FWhatsApp%20Image%202025-07-31%20at%205.27.13%20PM.jpeg?alt=media&token=3142f4fc-7ab9-4ecd-aed9-fbe1e9959b91",
     hint: "doctor portrait",
   },
   {
     name: "Dr. Jesús Godoy",
+    specialty: "Reumatólogo",
     image: "https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2FDr.godoy_-400x393%20(1).png?alt=media&token=f633ef6c-91f1-4ca6-bd2d-71c9d1593d1d",
     hint: "doctor portrait",
   },
   {
-    name: "Dra. María Lopez",
-    image: "https://placehold.co/400x400.png",
+    name: "Dra. Tatiana González",
+    specialty: "Reumatóloga Pediatra",
+    image: "https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2F6ac61a63-82f9-47c7-8eb2-1c04120821d4.jpg?alt=media&token=9739bf97-18cc-459c-af59-82671ab9910d",
     hint: "doctor portrait",
-  }
+  },
 ];
 
 export function Doctors() {
@@ -53,7 +57,7 @@ export function Doctors() {
         <Carousel
           opts={{
             align: "start",
-            loop: true,
+            loop: doctors.length > 3,
           }}
           className="w-full max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto"
         >
@@ -75,7 +79,7 @@ export function Doctors() {
                         <h3 className="font-headline text-2xl font-semibold">{doctor.name}</h3>
                         <div className="mt-1 flex items-center justify-center gap-2 text-muted-foreground">
                             <Stethoscope className="h-4 w-4" />
-                            <span>Reumatólogo</span>
+                            <span>{doctor.specialty}</span>
                         </div>
                       </div>
                     </CardContent>
