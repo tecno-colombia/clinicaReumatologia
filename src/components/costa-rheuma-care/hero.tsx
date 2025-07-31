@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative w-full h-[80vh] flex items-center justify-center text-center bg-primary">
        <div className="absolute inset-0 bg-black/50 z-10" />
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2FWhatsApp%20Image%202025-07-31%20at%2010.28.58%20AM.jpeg?alt=media&token=86fe5d2d-1054-4096-a5fb-b813aefc3d57"
         alt="Equipo médico de reumatología en la Clínica de la Costa"
         layout="fill"
         objectFit="cover"
