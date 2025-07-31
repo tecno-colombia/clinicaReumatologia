@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Costa Rheuma Care',
+  title: 'Clinica de la Costa',
   description: 'Líderes en Reumatología del Caribe Colombiano',
 };
 

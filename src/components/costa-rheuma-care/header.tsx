@@ -1,6 +1,7 @@
 "use client";
 
-import { HeartPulse, Menu } from "lucide-react";
+import Image from "next/image";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -17,10 +18,7 @@ export function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 flex items-center">
           <a href="#" className="mr-6 flex items-center space-x-2">
-            <HeartPulse className="h-8 w-8 text-primary" />
-            <span className="font-bold font-headline text-lg sm:text-xl">
-              Costa Rheuma Care
-            </span>
+            <Image src="https://www.clinicadelacosta.com/assets/images/logo.png" alt="Clinica de la Costa Logo" width={150} height={40} />
           </a>
         </div>
         <nav className="hidden items-center gap-6 text-sm md:flex ml-auto">
@@ -46,10 +44,7 @@ export function Header() {
                 <SheetContent side="right">
                     <div className="grid gap-4 py-6">
                     <a href="#" className="flex items-center space-x-2">
-                        <HeartPulse className="h-6 w-6 text-primary" />
-                        <span className="font-bold font-headline">
-                        Costa Rheuma Care
-                        </span>
+                        <Image src="https://www.clinicadelacosta.com/assets/images/logo.png" alt="Clinica de la Costa Logo" width={120} height={32} />
                     </a>
                     <div className="grid gap-2">
                     {navLinks.map((link) => (

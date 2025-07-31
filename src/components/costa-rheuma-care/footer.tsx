@@ -1,4 +1,5 @@
-import { HeartPulse, Phone, Mail, Globe, MapPin } from 'lucide-react';
+import { Phone, Mail, Globe, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -14,10 +15,9 @@ export function Footer() {
             <div className="grid gap-8 md:grid-cols-3">
             <div className="flex flex-col items-start">
                 <a href="#" className="flex items-center space-x-2 mb-4">
-                <HeartPulse className="h-8 w-8" />
-                <span className="text-2xl font-bold font-headline">Costa Rheuma Care</span>
+                  <Image src="https://www.clinicadelacosta.com/assets/images/logo.png" alt="Clinica de la Costa Logo" width={180} height={50} className="brightness-0 invert"/>
                 </a>
-                <p className="text-sm text-primary-foreground/80">Líderes en Reumatología del Caribe Colombiano.</p>
+                <p className="text-sm text-primary-foreground/80">Líderes en servicios de salud en el Caribe Colombiano.</p>
             </div>
             <div className="space-y-2">
                 <h4 className="font-semibold text-lg font-headline">Contacto</h4>

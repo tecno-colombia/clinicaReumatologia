@@ -16,10 +16,10 @@ export function Hero() {
        <div className="relative z-20 container px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-headline font-bold tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-7xl">
-            Portafolio de Servicios Integrales de Reumatología
+            Su salud, nuestra prioridad en el Caribe
           </h1>
           <p className="mt-4 font-body text-lg md:text-xl text-foreground/80">
-            Clínica de la Costa - Región Caribe Colombiana
+            Atención médica integral con los más altos estándares de calidad.
           </p>
           <div className="mt-8">
             <Button size="lg" asChild>
