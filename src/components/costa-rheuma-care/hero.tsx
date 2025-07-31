@@ -31,8 +31,8 @@ export function Hero() {
             <Button size="lg" asChild>
               <a href="#servicios">Conoce Nuestros Servicios</a>
             </Button>
-             <Button size="lg" variant="outline" className="bg-transparent text-white border-white/80 hover:bg-white hover:text-primary">
-              <a href="#contacto">Agendar Cita</a>
+             <Button size="lg" variant="outline" className="bg-transparent text-white border-white/80 hover:bg-white hover:text-primary" asChild>
+              <a href="https://www.clinicadelacosta.com/appointment" target="_blank" rel="noopener noreferrer">Agendar Cita</a>
             </Button>
           </div>
         </div>

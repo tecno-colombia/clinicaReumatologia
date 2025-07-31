@@ -33,7 +33,11 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <Button>Agendar Cita</Button>
+          <Button asChild>
+            <a href="https://www.clinicadelacosta.com/appointment" target="_blank" rel="noopener noreferrer">
+              Agendar Cita
+            </a>
+          </Button>
         </nav>
         <div className="ml-auto md:hidden">
             <Sheet>
@@ -59,7 +63,11 @@ export function Header() {
                         </a>
                     ))}
                     </div>
-                    <Button>Agendar Cita</Button>
+                    <Button asChild>
+                        <a href="https://www.clinicadelacosta.com/appointment" target="_blank" rel="noopener noreferrer">
+                            Agendar Cita
+                        </a>
+                    </Button>
                     </div>
                 </SheetContent>
             </Sheet>
