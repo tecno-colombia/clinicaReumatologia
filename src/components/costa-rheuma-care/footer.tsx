@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container py-12 px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col items-start">
-            <a href="#" className="flex items-center space-x-2 mb-4">
+            <a href="https://www.clinicadelacosta.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 mb-4">
               <Image src="https://www.clinicadelacosta.com/assets/images/logo.png" alt="Clinica de la Costa Logo" width={180} height={50} className="brightness-0 invert"/>
             </a>
             <p className="text-sm text-primary-foreground/80">Líderes en servicios de salud en el Caribe Colombiano.</p>
@@ -52,6 +52,9 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-primary-foreground/20 pt-6 text-center text-sm text-primary-foreground/60">
           <p>&copy; {new Date().getFullYear()} Clínica de la Costa. Todos los derechos reservados.</p>
+          <p className="mt-2 text-xs">
+            Diseñado y desarrollado por Fabián Muñoz Puello y Leidy Eva Anaya para Tecnosalud Internacional.
+          </p>
         </div>
       </div>
     </footer>
