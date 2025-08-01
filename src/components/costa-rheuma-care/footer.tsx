@@ -53,7 +53,7 @@ export function Footer() {
         <div className="mt-8 border-t border-primary-foreground/20 pt-6 text-center text-sm text-primary-foreground/60">
           <p>&copy; {new Date().getFullYear()} Clínica de la Costa. Todos los derechos reservados.</p>
           <p className="mt-2 text-xs">
-            Diseñado y desarrollado por Fabián Muñoz Puello y Leidy Eva Anaya para Tecnosalud Internacional.
+            Diseñado y desarrollado por Fabián Muñoz Puello y Leidy Vega Anaya para Tecnosalud Internacional.
           </p>
         </div>
       </div>
