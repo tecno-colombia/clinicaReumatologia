@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster"
 
 const siteConfig = {
   name: "Clínica de la Costa - Reumatología",
-  url: "https://www.clinicadelacosta.com", // Reemplazar con la URL de producción final
+  url: "https://www.clinicadelacosta.com",
   logo: "https://www.clinicadelacosta.com/assets/images/logo.png",
   description: "Clínica de la Costa, líder en Reumatología en el Caribe Colombiano. Ofrecemos un portafolio integral de servicios para el diagnóstico y tratamiento de enfermedades reumatológicas y autoinmunes.",
   keywords: "reumatologia, clinica de la costa, reumatologo, barranquilla, cartagena, santa marta, riohacha, caribe colombiano, artritis, lupus, osteoporosis, esclerosis, vasculitis, consulta reumatologia, terapias biologicas, capilaroscopia, síndrome de sjögren"
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: ['https://firebasestorage.googleapis.com/v0/b/medicalconect.firebasestorage.app/o/public%2FWhatsApp%20Image%202025-07-31%20at%2010.28.58%20AM.jpeg?alt=media&token=86fe5d2d-1054-4096-a5fb-b813aefc3d57'],
-    creator: "@clinicadelacosta", // Reemplazar con el usuario de Twitter si existe
+    creator: "@clinicadelacosta",
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: siteConfig.logo,
+    shortcut: siteConfig.logo,
+    apple: siteConfig.logo,
   },
 };
 
@@ -68,7 +68,7 @@ const structuredData = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 11.0041,  // Coordenadas aproximadas para Barranquilla
+    "latitude": 11.0041,
     "longitude": -74.8071
   },
   "openingHoursSpecification": {
@@ -96,7 +96,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="https://www.clinicadelacosta.com/assets/images/logo.png" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />

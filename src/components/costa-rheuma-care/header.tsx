@@ -19,7 +19,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 flex items-center">
-          <a href="#" className="mr-6 flex items-center space-x-2">
+          <a href="https://www.clinicadelacosta.com" target="_blank" rel="noopener noreferrer" className="mr-6 flex items-center space-x-2">
             <Image src="https://www.clinicadelacosta.com/assets/images/logo.png" alt="Clinica de la Costa Logo" width={150} height={40} />
           </a>
         </div>
@@ -49,7 +49,7 @@ export function Header() {
                 </SheetTrigger>
                 <SheetContent side="right">
                     <div className="grid gap-4 py-6">
-                    <a href="#" className="flex items-center space-x-2">
+                    <a href="https://www.clinicadelacosta.com" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                         <Image src="https://www.clinicadelacosta.com/assets/images/logo.png" alt="Clinica de la Costa Logo" width={120} height={32} />
                     </a>
                     <div className="grid gap-2">
