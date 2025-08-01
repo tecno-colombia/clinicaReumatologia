@@ -15,7 +15,7 @@ const services = [
   {
     icon: Users,
     title: "Apoyo Terapéutico",
-    items: ["Fisioterapia especializada", "Terapia ocupacional", "Trabajo social", "Psicología clínica", "Nutrición clínica"],
+    items: ["Fisioterapia especializada", "Terapia ocupacional", "Trabajo social", "Psicología clínica", "Nutrición clínica", "Enfermería"],
   },
   {
     icon: GraduationCap,
